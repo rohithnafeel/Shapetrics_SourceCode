@@ -2,15 +2,7 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public enum Shape
-    {
-        Square,
-        Triangle,
-        Circle,
-        Hexagon
-    }
-
-    public Shape obstacleShape;
+    public ShapeType obstacleShape;
 
     public Sprite squareSprite;
     public Sprite triangleSprite;
@@ -36,7 +28,7 @@ public class Obstacle : MonoBehaviour
         }
     }
 
-    public void SetShape(Shape shape)
+    public void SetShape(ShapeType shape)
     {
         obstacleShape = shape;
 
