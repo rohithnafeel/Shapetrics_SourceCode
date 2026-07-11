@@ -1,16 +1,36 @@
 using UnityEngine;
 
-public class ObstacleSpwaner : MonoBehaviour
+public class ObstacleSpawner : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject obstaclePrefab;
+
+    public float spawnInterval = 2f;
+
     void Start()
     {
-        
+        InvokeRepeating(
+            nameof(SpawnObstacle),
+            1f,
+            spawnInterval
+        );
     }
 
-    // Update is called once per frame
-    void Update()
+    void SpawnObstacle()
     {
-        
+        GameObject obstacleObject =
+            Instantiate(
+                obstaclePrefab,
+                transform.position,
+                Quaternion.identity
+            );
+
+        Obstacle obstacle =
+            obstacleObject.GetComponent<Obstacle>();
+
+        Obstacle.Shape randomShape =
+            (Obstacle.Shape)
+            Random.Range(0, 4);
+
+        obstacle.SetShape(randomShape);
     }
 }
