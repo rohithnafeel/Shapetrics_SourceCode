@@ -14,7 +14,10 @@ public class ShapeController : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        currentShape = ShapeType.Square;
+
+        currentShape = ShapeType.Circle;
+        sr.sprite = circle;
+        sr.color = new Color(0f, 1f, 0f);
     }
 
     void Update()
@@ -23,24 +26,28 @@ public class ShapeController : MonoBehaviour
         {
             currentShape = ShapeType.Square;
             sr.sprite = square;
+            sr.color = new Color(0f, 1f, 1f);
         }
 
         if (Input.GetKeyDown(KeyCode.W))
         {
             currentShape = ShapeType.Triangle;
             sr.sprite = triangle;
+            sr.color = new Color(1f, 0f, 1f);
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
             currentShape = ShapeType.Circle;
             sr.sprite = circle;
+            sr.color = new Color(0f, 1f, 0f);
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
             currentShape = ShapeType.Hexagon;
             sr.sprite = hexagon;
+            sr.color = new Color(0.5f, 0f, 1f);
         }
     }
 
