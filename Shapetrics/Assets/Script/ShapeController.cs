@@ -52,7 +52,8 @@ public class ShapeController : MonoBehaviour
         {
             if (currentShape == obstacle.obstacleShape)
             {
-                Debug.Log("Correct!");
+                GameManager.Instance.AddScore();
+
                 Destroy(other.gameObject);
             }
             else
