@@ -50,15 +50,20 @@ public class ShapeController : MonoBehaviour
 
         if (obstacle != null)
         {
+            Debug.Log("Player shape: " + currentShape);
+            Debug.Log("Obstacle shape: " + obstacle.obstacleShape);
+
             if (currentShape == obstacle.obstacleShape)
             {
+                Debug.Log("MATCH!");
+
                 GameManager.Instance.AddScore();
 
                 Destroy(other.gameObject);
             }
             else
             {
-                Debug.Log("Game Over!");
+                Debug.Log("NO MATCH!");
 
                 Time.timeScale = 0f;
             }
