@@ -10,7 +10,6 @@ public class Obstacle : MonoBehaviour
     public Sprite hexagonSprite;
 
     public float speed = 7f;
-    public float rotationSpeed = 100f;
 
     private SpriteRenderer spriteRenderer;
 
@@ -22,8 +21,6 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
-
-        transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
 
         if (transform.position.x < -15f)
         {
