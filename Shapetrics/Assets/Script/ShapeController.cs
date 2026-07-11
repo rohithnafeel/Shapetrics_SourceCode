@@ -14,7 +14,7 @@ public class ShapeController : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        currentShape = ShapeType.Circle;
+        currentShape = ShapeType.Square;
     }
 
     void Update()

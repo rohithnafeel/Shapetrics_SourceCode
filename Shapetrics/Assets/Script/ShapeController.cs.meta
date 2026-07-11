@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: 011d412fe678e8b4780b7cc730a5d42e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - square: {fileID: 7482667652216324306, guid: f075c7564d6aaa54e86416054138d16d, type: 3}
+  - triangle: {fileID: 7482667652216324306, guid: 3476edf3979afae408b0cf3cf9a411a9, type: 3}
+  - circle: {fileID: -2413806693520163455, guid: 58d355d0b1ef0df4082405cd96ae5e06, type: 3}
+  - hexagon: {fileID: -712631045867808456, guid: b98d1af331edf274289c17b8baf2b638, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
