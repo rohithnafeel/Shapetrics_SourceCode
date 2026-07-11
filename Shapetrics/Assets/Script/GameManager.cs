@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class GameManager : MonoBehaviour
+{
+    public static GameManager Instance;
+
+    public int score = 0;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public void AddScore()
+    {
+        score++;
+        Debug.Log("Score: " + score);
+    }
+}
