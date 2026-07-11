@@ -27,6 +27,8 @@ public class ShapeController : MonoBehaviour
             currentShape = ShapeType.Square;
             sr.sprite = square;
             sr.color = new Color(0f, 1f, 1f);
+
+            RotatePlayer(0f);
         }
 
         if (Input.GetKeyDown(KeyCode.W))
@@ -34,6 +36,8 @@ public class ShapeController : MonoBehaviour
             currentShape = ShapeType.Triangle;
             sr.sprite = triangle;
             sr.color = new Color(1f, 0f, 1f);
+
+            RotatePlayer(120f);
         }
 
         if (Input.GetKeyDown(KeyCode.S))
@@ -41,6 +45,8 @@ public class ShapeController : MonoBehaviour
             currentShape = ShapeType.Circle;
             sr.sprite = circle;
             sr.color = new Color(0f, 1f, 0f);
+
+            RotatePlayer(0f);
         }
 
         if (Input.GetKeyDown(KeyCode.D))
@@ -48,7 +54,13 @@ public class ShapeController : MonoBehaviour
             currentShape = ShapeType.Hexagon;
             sr.sprite = hexagon;
             sr.color = new Color(0.5f, 0f, 1f);
+
+            RotatePlayer(60f);
         }
+    }
+    void RotatePlayer(float angle)
+    {
+        transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
