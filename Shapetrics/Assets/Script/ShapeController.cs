@@ -2,13 +2,7 @@ using UnityEngine;
 
 public class ShapeController : MonoBehaviour
 {
-    public enum Shape
-    {
-        Square,
-        Triangle,
-        Circle,
-        Hexagon
-    }
+    public ShapeType currentShape;
 
     public Shape currentShape;
 
