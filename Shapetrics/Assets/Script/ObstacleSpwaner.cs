@@ -27,9 +27,8 @@ public class ObstacleSpawner : MonoBehaviour
         Obstacle obstacle =
             obstacleObject.GetComponent<Obstacle>();
 
-        Obstacle.Shape randomShape =
-            (Obstacle.Shape)
-            Random.Range(0, 4);
+        ShapeType randomShape =
+    (ShapeType)Random.Range(0, 4);
 
         obstacle.SetShape(randomShape);
     }
