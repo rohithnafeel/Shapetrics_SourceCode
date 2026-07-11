@@ -17,11 +17,23 @@ public class Obstacle : MonoBehaviour
     public Sprite circleSprite;
     public Sprite hexagonSprite;
 
+    public float speed = 7f;
+
     private SpriteRenderer spriteRenderer;
 
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        transform.Translate(Vector2.left * speed * Time.deltaTime);
+
+        if (transform.position.x < -15f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void SetShape(Shape shape)
