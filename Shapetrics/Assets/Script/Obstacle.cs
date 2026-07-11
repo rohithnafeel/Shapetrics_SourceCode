@@ -36,18 +36,22 @@ public class Obstacle : MonoBehaviour
         {
             case ShapeType.Square:
                 spriteRenderer.sprite = squareSprite;
+                spriteRenderer.color = new Color(0f, 1f, 1f);
                 break;
 
             case ShapeType.Triangle:
                 spriteRenderer.sprite = triangleSprite;
+                spriteRenderer.color = new Color(1f, 0f, 1f);
                 break;
 
             case ShapeType.Circle:
                 spriteRenderer.sprite = circleSprite;
+                spriteRenderer.color = new Color(0f, 1f, 0f);
                 break;
 
             case ShapeType.Hexagon:
                 spriteRenderer.sprite = hexagonSprite;
+                spriteRenderer.color = new Color(0.5f, 0f, 1f);
                 break;
         }
     }
