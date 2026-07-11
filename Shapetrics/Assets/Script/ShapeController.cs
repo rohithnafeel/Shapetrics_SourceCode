@@ -17,7 +17,7 @@ public class ShapeController : MonoBehaviour
 
         currentShape = ShapeType.Square;
         sr.sprite = square;
-        sr.color = new Color(0f, 1f, 0f);
+        sr.color = new Color(0f, 1f, 1f);
     }
 
     void Update()
