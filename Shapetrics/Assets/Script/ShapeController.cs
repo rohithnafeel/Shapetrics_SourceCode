@@ -65,10 +65,12 @@ public class ShapeController : MonoBehaviour
             {
                 GameManager.Instance.AddScore();
                 Destroy(other.gameObject);
+                AudioManager.Instance.PlayMatch();
             }
             else
             {
                 Time.timeScale = 0f;
+                AudioManager.Instance.PlayGameOver();
             }
         }
     }
