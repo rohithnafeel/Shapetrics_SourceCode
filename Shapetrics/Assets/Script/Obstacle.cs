@@ -34,19 +34,19 @@ public class Obstacle : MonoBehaviour
 
         switch (shape)
         {
-            case Shape.Square:
+            case ShapeType.Square:
                 spriteRenderer.sprite = squareSprite;
                 break;
 
-            case Shape.Triangle:
+            case ShapeType.Triangle:
                 spriteRenderer.sprite = triangleSprite;
                 break;
 
-            case Shape.Circle:
+            case ShapeType.Circle:
                 spriteRenderer.sprite = circleSprite;
                 break;
 
-            case Shape.Hexagon:
+            case ShapeType.Hexagon:
                 spriteRenderer.sprite = hexagonSprite;
                 break;
         }
