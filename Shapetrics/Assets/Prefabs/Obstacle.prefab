@@ -132,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleShape: 0
   squareSprite: {fileID: 7482667652216324306, guid: f075c7564d6aaa54e86416054138d16d, type: 3}
-  triangleSprite: {fileID: 7482667652216324306, guid: 3476edf3979afae408b0cf3cf9a411a9, type: 3}
+  triangleSprite: {fileID: 7482667652216324306, guid: 24125137b4f41a6419097a80f0d5cb61, type: 3}
   circleSprite: {fileID: -2413806693520163455, guid: 58d355d0b1ef0df4082405cd96ae5e06, type: 3}
   hexagonSprite: {fileID: -712631045867808456, guid: b98d1af331edf274289c17b8baf2b638, type: 3}
   speed: 7
