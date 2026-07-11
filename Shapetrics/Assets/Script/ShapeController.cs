@@ -4,7 +4,7 @@ public class ShapeController : MonoBehaviour
 {
     public ShapeType currentShape;
 
-    public Shape currentShape;
+    public ShapeType currentShape;
 
     private SpriteRenderer sr;
 
