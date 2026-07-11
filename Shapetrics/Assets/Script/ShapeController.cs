@@ -1,17 +1,30 @@
 using UnityEngine;
 
-public class PlayerAnimation : MonoBehaviour
+public class ShapeController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public enum Shape
+    {
+        Square,
+        Triangle,
+        Circle,
+        Hexagon
+    }
+
+    public Shape currentShape;
+
+    private SpriteRenderer sr;
+
     void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Obstacle obstacle = other.GetComponent<Obstacle>();
 
@@ -28,5 +41,4 @@ public class PlayerAnimation : MonoBehaviour
             }
         }
     }
-}
 }
