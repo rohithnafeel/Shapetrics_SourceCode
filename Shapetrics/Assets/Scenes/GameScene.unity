@@ -351,7 +351,7 @@ MonoBehaviour:
   sfxSource: {fileID: 0}
   switchSound: {fileID: 8300000, guid: 02823052c97177e42a62c257e72b0395, type: 3}
   matchSound: {fileID: 8300000, guid: d9f6b583032438f42a65cf5b294d30c5, type: 3}
-  gameOverSound: {fileID: 8300000, guid: 6a55d52fe2ae59b44934eb4f17cc9ab2, type: 3}
+  gameOverSound: {fileID: 8300000, guid: 506934496501a2b4996baffa76ceebf8, type: 3}
   buttonSound: {fileID: 0}
 --- !u!4 &242651673
 Transform:
@@ -1721,7 +1721,6 @@ GameObject:
   - component: {fileID: 662783339}
   - component: {fileID: 662783341}
   - component: {fileID: 662783340}
-  - component: {fileID: 662783342}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1902,23 +1901,6 @@ MonoBehaviour:
   triangle: {fileID: 7482667652216324306, guid: 24125137b4f41a6419097a80f0d5cb61, type: 3}
   circle: {fileID: -2413806693520163455, guid: 58d355d0b1ef0df4082405cd96ae5e06, type: 3}
   hexagon: {fileID: -712631045867808456, guid: b98d1af331edf274289c17b8baf2b638, type: 3}
---- !u!114 &662783342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662783334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: a17262494e582b04187e50d657acbcfc, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!1 &1671850868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2202,6 +2184,9 @@ MonoBehaviour:
   scoreText: {fileID: 427441206}
   distanceText: {fileID: 1671850870}
   bestScoreText: {fileID: 274339642}
+  gameSpeed: 5
+  speedIncreaseRate: 0.1
+  maxSpeed: 20
 --- !u!4 &2021944364
 Transform:
   m_ObjectHideFlags: 0
