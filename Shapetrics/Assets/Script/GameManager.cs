@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     public int bestScore = 0;
 
     public float distance = 0f;
-    public GameObject gameOverPanel;
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI distanceText;
@@ -17,6 +16,7 @@ public class GameManager : MonoBehaviour
     public float gameSpeed = 5f;
     public float speedIncreaseRate = 0.1f;
     public float maxSpeed = 20f;
+    public GameObject gameOverPanel;
 
     private void Awake()
     {
