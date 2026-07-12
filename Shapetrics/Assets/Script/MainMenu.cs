@@ -15,6 +15,16 @@ public class MainMenu : MonoBehaviour
 
     public void ExitGame()
     {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayButton();
+        }
+
+        Invoke(nameof(Quit), 0.2f);
+    }
+
+    void Quit()
+    {
         Application.Quit();
     }
 }
