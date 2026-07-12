@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI distanceText;
     public TextMeshProUGUI bestScoreText;
+    public float gameSpeed = 5f;
+    public float speedIncreaseRate = 0.1f;
+    public float maxSpeed = 20f;
 
     private void Awake()
     {
@@ -30,7 +33,12 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        distance += Time.deltaTime * 5f;
+        distance += Time.deltaTime * gameSpeed;
+
+        if (gameSpeed < maxSpeed)
+        {
+            gameSpeed += speedIncreaseRate * Time.deltaTime;
+        }
 
         distanceText.text = "Distance: " +
                             Mathf.FloorToInt(distance) +
