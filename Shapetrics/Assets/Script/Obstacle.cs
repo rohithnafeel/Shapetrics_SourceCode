@@ -20,7 +20,11 @@ public class Obstacle : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        transform.Translate(
+    Vector2.left *
+    GameManager.Instance.gameSpeed *
+    Time.deltaTime
+);
 
         if (transform.position.x < -15f)
         {
