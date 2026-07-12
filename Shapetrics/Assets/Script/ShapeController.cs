@@ -69,7 +69,7 @@ public class ShapeController : MonoBehaviour
             }
             else
             {
-                Time.timeScale = 0f;
+                GameManager.Instance.GameOver();
                 AudioManager.Instance.PlayGameOver();
             }
         }
