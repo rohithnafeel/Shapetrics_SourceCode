@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
             AudioManager.Instance.PlayButton();
         }
 
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("GameRules");
     }
 
     public void ExitGame()
