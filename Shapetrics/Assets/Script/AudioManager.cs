@@ -14,6 +14,11 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        if (sfxSource == null)
+        {
+            sfxSource = GetComponent<AudioSource>();
+        }
     }
 
     public void PlaySwitch()
