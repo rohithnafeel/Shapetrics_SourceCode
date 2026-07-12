@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
         {
             AudioManager.Instance.PlayButton();
         }
+        Invoke(nameof(Quit), 0.2f);
 
         SceneManager.LoadScene("GameScene");
     }

@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65393845a206ba746adfd2711063d76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxSource: {fileID: 0}
+  sfxSource: {fileID: 242651671}
   switchSound: {fileID: 8300000, guid: 02823052c97177e42a62c257e72b0395, type: 3}
   matchSound: {fileID: 8300000, guid: d9f6b583032438f42a65cf5b294d30c5, type: 3}
   gameOverSound: {fileID: 8300000, guid: 506934496501a2b4996baffa76ceebf8, type: 3}
