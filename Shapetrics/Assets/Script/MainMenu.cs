@@ -5,7 +5,10 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        AudioManager.Instance.PlayButton();
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayButton();
+        }
 
         SceneManager.LoadScene("GameScene");
     }
