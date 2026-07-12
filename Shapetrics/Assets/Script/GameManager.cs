@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public int bestScore = 0;
 
     public float distance = 0f;
+    public GameObject gameOverPanel;
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI distanceText;
@@ -70,5 +71,12 @@ public class GameManager : MonoBehaviour
 
         bestScoreText.text =
             "Best: " + bestScore;
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0f;
+
+        gameOverPanel.SetActive(true);
     }
 }
