@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Exclude Unity shader files from GitHub language stats
+*.shader linguist-detectable=false
+*.shadergraph linguist-detectable=false
+*.hlsl linguist-detectable=false
+*.cginc linguist-detectable=false
+*.compute linguist-detectable=false
