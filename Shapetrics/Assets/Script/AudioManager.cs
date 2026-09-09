@@ -4,6 +4,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
+
     public AudioSource sfxSource;
 
     public AudioClip switchSound;
